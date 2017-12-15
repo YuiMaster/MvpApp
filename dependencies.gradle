@@ -1,0 +1,43 @@
+ext {
+    /************第三方库 定义 start *****************/
+    /** appcompat v7 **/
+    appcompatv7 = 'com.android.support:appcompat-v7:25.3.1'
+
+    /** appcompat-v7包是必须的 **/
+    fragmentation = 'me.yokeyword:fragmentation:0.10.7'
+
+    /** rxjava rxAndroid**/
+    rxjava = 'io.reactivex:rxjava:1.2.1'
+    rxandroid = 'io.reactivex:rxandroid:1.2.1'
+
+    /** rxLifecycle **/
+    rxlifecycle = 'com.trello:rxlifecycle:0.8.0'
+    rxlifecycle_components = 'com.trello:rxlifecycle-components:0.8.0'
+
+    /** rxpermissions **/
+    rxpermissions = 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+
+    /** dagger2 **/
+    dagger2 = 'com.google.dagger:dagger:2.7'
+    dagger2_compiler = 'com.google.dagger:dagger-compiler:2.7'
+
+    /** eventbus*/
+    eventbus = 'org.greenrobot:eventbus:3.0.0'
+
+    /** constraint_layout google主推布局*/
+    constraint_layout = 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    /** support_annotations NonNull等提示*/
+    support_annotations = 'com.android.support:support-annotations:27.0.2'
+
+
+    /** rxLife 系列*/
+    rxLife = 'com.trello:rxlifecycle:0.8.0'
+    rxLife_components= 'com.trello:rxlifecycle-components:0.8.0'
+
+    /** retrofit 系列**/
+    retrofit2 = 'com.squareup.retrofit2:retrofit:2.1.0'
+    retrofit2_converter_gson = 'com.squareup.retrofit2:converter-gson:2.1.0'
+    retrofit2_adapter_rxjava = 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    /************第三方库 定义 end *****************/
+}

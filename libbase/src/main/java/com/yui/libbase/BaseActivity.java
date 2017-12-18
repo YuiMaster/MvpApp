@@ -4,9 +4,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.trello.rxlifecycle.components.RxActivity;
 import com.yui.libbase.utils.LOG;
 import com.yui.libbase.utils.ToastUtil;
+
+import me.yokeyword.fragmentation.SupportFragment;
 
 /**
  * @author Jane
@@ -15,9 +16,7 @@ import com.yui.libbase.utils.ToastUtil;
  * Activity 基础类
  */
 
-public abstract class BaseActivity extends RxActivity implements IBaseViewHolder {
-
-
+public abstract class BaseActivity extends LifecycleActivity implements IBaseViewHolder {
     protected Context mActivity;
     protected HttpManager mHttpManager;
 
@@ -27,6 +26,12 @@ public abstract class BaseActivity extends RxActivity implements IBaseViewHolder
         mActivity = this;
         mHttpManager = new HttpManager();
         setContentView(getActivitylayout());
+
+        if(savedInstanceState == null){
+            loadRootFragment(R.id.fl_container,getRootFragment());
+        }
+
+
         initData();
         initView();
         finalInit();
@@ -37,6 +42,8 @@ public abstract class BaseActivity extends RxActivity implements IBaseViewHolder
     public abstract void initData();
 
     public abstract void initView();
+
+    public abstract SupportFragment getRootFragment();
 
     public void finalInit() {
 

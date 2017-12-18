@@ -28,4 +28,5 @@ dependencies {
     compile appcompatv7
     implementation rxLife
     implementation rxLife_components
+    implementation fragmentation
 }

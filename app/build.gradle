@@ -25,6 +25,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':libbase')
     implementation appcompatv7
+    implementation fragmentation
     implementation constraint_layout
 
     implementation retrofit2

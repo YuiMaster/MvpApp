@@ -83,7 +83,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     /**
      * Called when a view has been clicked.
      *
-     *
      * @param v The view that was clicked.
      */
     @Override
@@ -106,7 +105,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
      * Intended for use with {@link Observable#compose(Observable.Transformer)}
      *
      * @param event the event that triggers unsubscription
-     *
      * @return a reusable {@link Observable.Transformer} which unsubscribes when the event triggers.
      */
     @Nonnull

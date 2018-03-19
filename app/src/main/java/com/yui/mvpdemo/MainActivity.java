@@ -56,7 +56,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     /**
-     * https://api.github.com/users/octocat/repos
+     * @author liaoyuhuan@hudunsoft.com
+     * @time 2018/3/19  17:26
+     * @describe https://api.github.com/users/octocat/repos
      */
     private void requestRepos() {
         LOG.w("ydb/", "requestRepos");

@@ -8,10 +8,12 @@ import rx.Observable;
 
 
 /**
- * Created by Jane on 2017/12/15.
- * 请求repo 接口
+ * @author liaoyuhuan
+ * @name ${PROJECT_NAME}
+ * @class
+ * @time 2018/3/19  17:52
+ * @description 请求repo 接口
  */
-
 public class RepoApi extends BaseApi {
     private String name;
 
